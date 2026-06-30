@@ -179,7 +179,7 @@ export const cliOptions = {
   experimentalDataFormat: {
     type: 'string',
     describe:
-      'Format for structured data in text responses. "json" (default), "toon" (requires @toon-format/toon), or "gcf" (requires @blackwell-systems/gcf).',
+      'Override format for structured data in text responses. Default uses built-in formatters. "toon" (requires @toon-format/toon) or "gcf" (requires @blackwell-systems/gcf) replace structured content with the specified encoding.',
     choices: ['json', 'toon', 'gcf'] as const,
     hidden: true,
   },
